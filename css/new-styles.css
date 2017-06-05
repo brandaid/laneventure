@@ -104,7 +104,6 @@ h1, h2, h3, h4, h5, h6, p, span, a, ul, li {
     display: inline-block;
     font-size: 15px;
     padding: 20px 26px;
-    font-weight: bold;
     text-decoration: none;
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;

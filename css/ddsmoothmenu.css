@@ -1,5 +1,5 @@
 .ddsmoothmenu{
-	font: bold 12px 'HelveticaNeue', "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font: 12px 'HelveticaNeue', "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
 	width: 100%;
 }
 .ddsmoothmenu ul{
@@ -64,7 +64,6 @@
 	padding-left: 0;
 	text-transform: none;
 	color: #666666;
-	font-family:
 }
 
 /*All subsequent sub menu levels vertical offset after 1st level sub menu */

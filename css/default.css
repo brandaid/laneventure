@@ -227,9 +227,6 @@ li {
 	padding-right: 0;
 	margin-right: 0;
 }
-#header #smoothmenu1 ul li a {
-	font-weight: bold;
-}
 #header #smoothmenu1 ul {
 	border-radius: 5px;
 }
@@ -964,11 +961,12 @@ select option {
 }
 #form1 #submit, #formFind #searchLoc, .linkBlock  {
 	background-image: none;
-	background-color: #666;
+	background-color: #a3bcc4;
 	border: 0;
 	color: #fff;
+	cursor: pointer;
 	text-transform: uppercase;
-	padding: 3px 14px;
+	padding: 7px 14px 3px 14px;
 	font-family: 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	text-decoration: none;
 }
