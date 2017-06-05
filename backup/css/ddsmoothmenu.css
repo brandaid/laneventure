@@ -1,5 +1,6 @@
 .ddsmoothmenu{
-	font: bold 12px 'HelveticaNeue', "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	font: bold 12px "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	background: #312720; /*background of menu bar (default state)*/
 	width: 100%;
 }
 .ddsmoothmenu ul{
@@ -12,7 +13,10 @@
 /*Top level list items*/
 .ddsmoothmenu ul li{
 	position: relative;
-	display: inline-block;
+	display: inline;
+	float: left;
+	padding: 0 60px 6px 4px;
+	margin-right: 60px;
 }
 .ddsmoothmenu ul li ul {
 }
@@ -24,7 +28,8 @@
 /*Top level menu link items style*/
 .ddsmoothmenu ul li a{
 	display: block;
-	color: #000;
+	/*background: #414141; background of menu items (default state)*/
+	color: #fff;
 	text-decoration: none;
 }
 * html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
@@ -40,19 +45,16 @@
 }
 
 .ddsmoothmenu ul li a:hover{
-	color: #000;
+	color: #fff;
 }
-
+	
 /*1st sub level menu*/
 .ddsmoothmenu ul li ul{
 	position: absolute;
 	margin-left: 4px;
 	display: none; /*collapse all sub menus to begin with*/
 	visibility: hidden;
-	width: 140px;
-
-	-webkit-box-shadow: 0 -5px 30px 1px rgba(0,0,0,0.1);
-	box-shadow: 0 -5px 30px 1px rgba(0,0,0,0.1);
+	width: 186px;
 }
 .ddsmoothmenu ul li ul li a{
 	text-align: left;
@@ -64,7 +66,7 @@
 	padding-left: 0;
 	text-transform: none;
 	color: #666666;
-	font-family:
+	font-family: 
 }
 
 /*All subsequent sub menu levels vertical offset after 1st level sub menu */
@@ -74,15 +76,13 @@
 
 /* Sub level menu links style */
 .ddsmoothmenu ul li ul li a{
-	font: normal 11px 'HelveticaNeue', "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
-	display: block;
-	width: 100%;
+	font: normal 11px "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	width: 164px; /*width of sub menus*/
 	padding: 5px;
 	margin: 0;
-	background: #fff;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	padding-bottom: 10px;
+	border-top: 1px solid #ebece3;
+	background: #fff; /*background of menu items (default state)*/
 }
 
 /* Holly Hack for IE \*/

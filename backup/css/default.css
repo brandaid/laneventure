@@ -25,7 +25,7 @@ html, body {
 }
 body {
 	color: #344241;
-	font: 11px/16px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font: 11px/16px Helvetica, Arial, sans-serif;
 	min-width: 980px;
 }
 .clearer { /* go here for explanation:  http: //tangible.ca/articles/35/how-to-get-a-parent-div-to-expand-around-floated-content */
@@ -46,7 +46,7 @@ body {
 }
 input, select, textarea {
 	vertical-align:middle;
-	font:100% 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font:100% Helvetica, Arial, sans-serif;
 }
 .left {
 	float: left;
@@ -61,36 +61,36 @@ input, select, textarea {
 ===========================================================================================================================*/
 
 h1 {
-	font: bold 14px/1.2 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
+	font: bold 14px/1.2 "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	color: #312720;
 	margin-bottom: 4px;
 	text-transform: uppercase;
 }
 h2 {
-	font: bold 14px/1.2 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
+	font: bold 14px/1.2 "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	color: #312720;
 	margin-bottom: 3px;
 }
 h3 {
-	font: bold 13px/1.2 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
+	font: bold 13px/1.2 "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	color: #312720;
 	margin-bottom: 4px;
 }
 h4 {
-	font: bold 14px/1.2 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font: bold 14px/1.2 Helvetica, Arial, sans-serif;
 	color: #312720;
 	text-transform: uppercase;
 	margin-bottom: 2px;
 	padding-top: 4px;
 }
 p, ul, ol, blockquote {
-	font: normal 13px/1.5 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
+	font: normal 13px/1.5 "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	color: #312720;
 }
 p {
 }
 a {
-	color: #4c889b;
+	color: #467db4;
 	text-decoration: underline;
 }
 a:hover {
@@ -122,21 +122,24 @@ li {
 
 #container {
 	margin: 0 auto;
-	width: 1024px;
+	width: 980px;
 }
 #headerContainer {
 	height: 103px;
 }
 #header {
 	margin:  0 auto;
-	width: 1024px;
+	width: 980px;
 	position: relative;
 	z-index: 3000; /* IE 7 workaround for ddsmoothmenu: the menu was hiding behind the #contentContainer */
 }
 #header #logo {
 	position: relative;
+	margin-left: 12px;	
+	padding-top: 38px;
+	padding-bottom: 20px;
 	display: block;
-	width: 281px;
+	width: 257px;
 }
 #header ul#secNav li {
 	background: none;
@@ -164,37 +167,17 @@ li {
 	text-decoration: underline;
 }
 #header #search input.search {
-	background: white;
+	background: url(../images/global/search-textfield.gif) no-repeat;
 	border: none;
-	height: 47px;
-	width: 216px;
-	font-size: 14px;
-	padding: 17px 40px 17px 16px;
-
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-
-	-webkit-box-shadow: 0 0 30px 1px rgba(0,0,0,0.1);
-	box-shadow: 0 0 30px 1px rgba(0,0,0,0.1);
+	height: 19px;
+	width: 180px;
+	padding: 5px 35px 5px 10px;
+	vertical-align: top;
+	margin-right: -26px;
 }
 *+html #search input.search { /* ie7 workaround */
-	/*margin-top:-1px*/
+	margin-top:-1px
 }
-
-#search {
-	position: relative;
-}
-#search .search-ico {
-	position: absolute;
-	right: 15px;
-	top: 14px;
-}
-::-webkit-input-placeholder { color: #a3bcc4!important; }
-:-moz-placeholder { color: #a3bcc4!important; }
-::-moz-placeholder { color: #a3bcc4!important; }
-:-ms-input-placeholder { color: #a3bcc4!important; }
-
 #header p {
 	display: block;
 	position: absolute;
@@ -211,66 +194,40 @@ li {
 #header #smoothmenu1 .category a {
 	font-weight: bold;
 	background-color: #eff0ea;
-	color: #3a3c43;
+	color: #818181;
 }
 #header #smoothmenu1 {
-	width: 100%;
+	width: 980px;
+	height: 29px;
+	background-color: #312720;
+	margin-bottom: 9px;
 }
 #header #smoothmenu1 .first {
+	padding-left: 5px;
 	margin-left: 0;
 }
 #header #smoothmenu1 .last {
 	padding-right: 0;
 	margin-right: 0;
 }
-#header #smoothmenu1 ul li a {
-	font-weight: bold;
-}
-#header #smoothmenu1 ul {
-	border-radius: 5px;
-}
 #header #smoothmenu1 ul ul {
-	top: 34px!important;
-
-}
-#header #smoothmenu1 ul ul li:first-child a {
-	border-radius: 5px 5px 0 0;
-	position: relative;
-}
-#header #smoothmenu1 ul ul li:first-child a:before {
-	content: "\f0d8";
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: 30px;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	position: absolute;
-	top: -22px;
-	color: white;
-	left: 45%;
-}
-#header #smoothmenu1 ul ul li:last-child a {
-	border-radius: 0 0 5px 5px;
+	background-color: #ccccc2;
+	padding: 1px;
 }
 #header #smoothmenu1 ul ul a {
-	padding: 20px;
-	font-size: 15px;
-	color: #525a74;
+	padding: 6px 12px;
+	font-size: 12px;
+	color: #858585;
 	text-transform: none;
 	text-indent: 0;
-	font-family: 'HelveticaNeueLTStdLt';
-}
-#header #smoothmenu1 ul ul {
-	left: -30%!important;
 }
 #header #smoothmenu1 ul ul a:hover {
-	background-color: #a3bcc4;
-	color: white;
+	background-color: #e9eae1;
 }
-#header #smoothmenu1 a {
-	padding: 0;
-	font-family: 'HelveticaNeueLTStdBd', Helvetica, Arial, san-serif;
+#header #smoothmenu1 a {	
+	padding: 8px 5px 0px 13px;
+	font-family: Helvetica, Arial, san-serif;
+	text-transform: uppercase;
 	font-size: 15px;
 	line-height: 1;
 }
@@ -295,16 +252,21 @@ li {
 	float: right;
 	text-align: right;
 }
-
+#search {
+	position: absolute;
+	top: 46px;
+	right: 0;
+}
 #billboardContainer {
 	background: url() top center no-repeat;
-	height: 536px;
-	margin-bottom: 128px;
+	height: 386px;
 }
 #billboard {
 	margin: 0 auto;
-	width: 100%;
+	width: 980px;
 	position: relative;
+}
+#promos {
 }
 
 
@@ -333,16 +295,16 @@ li {
 }
 #content #breadCrumb, #content #breadCrumb a {
 	font-size: 12px;
-	color: #88888b;
+	color: #b8b5ac;
 }
 #content .pgTitle, #content .pgTitle2 {
 	display: block;
 	border-bottom: 1px solid #c1bdb6;
 	padding-left: 12px;
 	color: #312720;
-	font-size: 19px;
+	text-transform: uppercase;
+	font-size: 18px;
 	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
 	overflow: hidden;
 }
 #content .pgTitle2 {
@@ -538,16 +500,16 @@ li {
 	right: 16px;
 }
 #content .box1 a.magnify {
-	background: url(../images/global/icon-magnify.png) no-repeat left top;
+	background: url(../images/global/icon-magnify.png) no-repeat left top;	
 }
 #content .box1 a.magnifyWhite {
-	background: url(../images/global/icon-magnify-white.png) no-repeat left top;
+	background: url(../images/global/icon-magnify-white.png) no-repeat left top;	
 }
 #content .box1 a.magnify:hover {
-	background: url(../images/global/icon-magnify.png) no-repeat right top;
+	background: url(../images/global/icon-magnify.png) no-repeat right top;	
 }
 #content .box1 a.magnifyWhite:hover {
-	background: url(../images/global/icon-magnify-white.png) no-repeat right top;
+	background: url(../images/global/icon-magnify-white.png) no-repeat right top;	
 }
 #content .box2 {
 	background-color: #eff0ea;
@@ -558,7 +520,7 @@ li {
 }
 #content .box2 b {
 	font-size: 18px;
-	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1;
 	display: inline-block;
@@ -583,7 +545,7 @@ li {
 
 /* --------------------- singleColumn --------------------- */
 
-#singleColumn {
+#singleColumn {	
 	margin-left: 12px;
 }
 #singleColumn p:first-child {
@@ -636,7 +598,7 @@ li {
 	overflow-y: scroll;
 }
 #singleColumn .map {
-	float: right;
+	float: right; 
 }
 
 
@@ -651,9 +613,6 @@ li {
 }
 #priColumn p {
 	padding-bottom: 15px;
-	color: #88888b;
-	font-size: 15px;
-	line-height: 1.3em;
 }
 #priColumn h1, #priColumn h2, #priColumn h3, #priColumn h4 {
 	padding-top: 10px;
@@ -713,21 +672,6 @@ li {
 }
 #priColumn #tableProduct1 .tText h2 {
 	font-size: 12px;
-}
-#priColumn #tableProduct1 .tText h3 {
-	color: #312720;
-	font-size: 15px;
-	font-weight: bold;
-	letter-spacing: 1px;
-}
-#priColumn #tableProduct1 .tText p a {
-	font-size: 14px;
-	line-height: 1.4em;
-	display: block;
-}
-#priColumn #tableProduct1 .tText p a:hover {
-	color: black;
-	text-decoration: underline;
 }
 #priColumn #tableProduct1 .tText p {
 	padding-bottom: 0;
@@ -801,23 +745,21 @@ li {
 #secColumn .colMenu2 {
 }
 #secColumn .colMenu2 h2 {
-	background-color: #e3e9eb;
-	padding: 8px 0 4px 12px;
+	background-color: #eff0ea;
+	padding: 4px 0 4px 12px;
 	text-transform: uppercase;
-	font-size: 14px;
-	margin-bottom: 10px;
-	color: #312720;
-	font-family: 'HelveticaNeueLTStdBd';
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 #secColumn .colMenu2 ul {
-	font-size: 14px;
+	font-size: 12px;
 	margin-bottom: 15px;
 	padding-left: 10px;
 }
 #secColumn .colMenu2 li {
 	line-height: 1.8;
 	background-attachment: none;
-	position: relative;
+	position: relative;	
 }
 #secColumn .colMenu2 li a {
 	font-weight: normal;
@@ -829,7 +771,8 @@ li {
 	color: #312720;
 }
 #secColumn .colMenu2 a.link1 {
-	color: #4c889b;
+	color: #467DB4;
+	font-style: italic;
 }
 #secColumn .colMenu2 a.remove {
 	position: absolute;
@@ -857,7 +800,7 @@ ul.tabNavigation, ul.tabNavigation2 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	font: italic 14px/1.2 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	font: italic 14px/1.2 "Lucida Sans", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 	height: 30px; /*--Set height of tabs--*/
 }
 ul.tabNavigation li, ul.tabNavigation2 li {
@@ -954,7 +897,7 @@ select option {
 
 #form1 {
 	font-size: .8em;
-	font-family: 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
+	font-family: "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	margin-top: 23px;
 }
 #form1 .label {
@@ -972,7 +915,7 @@ select option {
 	color: #fff;
 	text-transform: uppercase;
 	padding: 3px 14px;
-	font-family: 'HelveticaNeue', "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
+	font-family: "Lucida Sans", "Lucida Sans Unicode",  Helvetica, Arial, sans-serif;
 	text-decoration: none;
 }
 #form1 #submit:hover, #formFind #searchLoc:hover, .linkBlock:hover  {
@@ -1057,7 +1000,7 @@ select option {
 	color: #675e55;
 	height: 22px;
 	padding: 0 24px 0 8px;
-	font: 12px/23px 'HelveticaNeue', Helvetica, Arial,sans-serif;
+	font: 12px/23px Helvetica, Arial,sans-serif;
 	background: url(../images/global/select-box1.gif) no-repeat;
 	overflow: hidden;
 }
@@ -1076,8 +1019,8 @@ select option {
 
 /* --------------------- HOMEPAGE ROTATING BANNER --------------------- */
 #myslides {
-	width: 100%;
-	height: 536px;
+	width: 980px;
+	height: 360px;
 	/*overflow: hidden;*/
 	z-index: 500;
 	background:none !important;
@@ -1096,10 +1039,34 @@ select option {
 	padding: 17px 8px 10px 18px;
 	border: 1px solid #756e67;
 }
-
+#myslides h1 {
+	font: normal 24px/1.2 Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 5px;
+}
+#myslides p {
+	font: normal 14px/1.3 Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+#myslides cite {
+	display: block;
+	width: 500px;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	bottom: 6px;
+	left: 20px;
+	z-index: 5000;
+}
 #myslides > div {
-	width: 100%!important;
-	height: 536px!important;
+	width: 980px;
+	height: 386px;
+}
+#myslides .billBoard1 {
+	background: url(../images/home/bb-kingston.jpg) top left repeat;
 }
 #myslides .billBoard2 {
 	background: url(../images/home/bb-harbor-breeze.jpg) top left repeat;
@@ -1137,7 +1104,7 @@ select option {
 	background:url("") repeat-x scroll 0 0;
 	color: #d6d2cf;
 	display: inline-block;
-	font: 12px/18px 'HelveticaNeue', Helvetica, Arial, san-serif;
+	font: 12px/18px Helvetica, Arial, san-serif;
 	height: 18px;
 	margin: 4px 0 0 5px;
 	padding: 2px 8px;
@@ -1168,7 +1135,7 @@ select option {
 	margin-top: -4px;
 }
 #promos h2 {
-	font: normal 18px/1.1 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font: normal 18px/1.1 Helvetica, Arial, sans-serif;
 	color: #000;
 	text-transform: uppercase;
 	padding-bottom: 8px;
@@ -1194,13 +1161,73 @@ select option {
 	clear:both;
 }
 #footer {
-	margin: 9px auto 0 auto;
+	margin: 9px auto 20px auto;
 	padding-top: 22px;
+	padding-bottom: 70px;
 	position: relative;
-	width: 1024px;
+	width: 980px;
+	background: url(../images/global/line-flourish.gif) top center no-repeat;
 	overflow: hidden;
 }
-
+#footer ul, #footer a, #footer p {
+	font-size: 12px;
+	color: #847c6d;
+}
+#footer div {
+	float: left;
+	width: 280px;
+	margin-left: 11px;
+}
+#footer div+div {
+	float: right;
+	width: 584px;
+	margin-right: 11px;
+}
+#footer div ul {
+	display: block;
+	text-align: left;
+}
+#footer div+div ul {
+	float: right;
+	text-align: right;
+}
+#footer li, #footer p {
+	line-height: 1.9;
+}
+#footer li {
+	text-transform: uppercase;
+	background: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	padding-left: 17px;
+	padding-right: 11px;
+	background: url(../images/global/img-divider.gif) left center no-repeat;
+}
+#footer ul+ul li {
+	text-align: right;
+}
+#footer ul li.first {
+	background: none;
+	padding-left: 0;
+}
+#footer ul li.last {
+	padding-right: 0;
+}
+#footer li a {
+	font-size: 11px;
+	text-decoration: none;
+}
+#footer li a:hover {
+	text-decoration: underline;
+}
+#footerNav {
+	padding-left: 60px;
+	margin-bottom: 15px;
+}
+#footer p {
+	margin: 0;
+}
 /* end FOOTER */
 
 /* --------------------- PUSH/PULLS --------------------- */
