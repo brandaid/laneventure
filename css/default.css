@@ -88,6 +88,10 @@ p, ul, ol, blockquote {
 	color: #312720;
 }
 p {
+	padding-bottom: 15px;
+	color: #88888b;
+	font-size: 15px;
+	line-height: 1.3em;
 }
 a {
 	color: #4c889b;
@@ -210,7 +214,7 @@ li {
 }
 #header #smoothmenu1 .category a {
 	font-weight: bold;
-	background-color: #eff0ea;
+	background-color: #f7f7f9;
 	color: #3a3c43;
 }
 #header #smoothmenu1 {
@@ -317,7 +321,7 @@ li {
 }
 #content {
 	margin: 0 auto;
-	width: 980px;
+	width: 1024px;
 	background-color:#fff;
 	margin-bottom: 10px;
 	overflow: hidden;
@@ -382,7 +386,7 @@ li {
 	margin-top: -22px;
 }
 #content ul.toolbox {
-	background-color: #eff0ea;
+	background-color: #f7f7f9;
 	overflow: hidden;
 	padding: 23px 10px;
 	margin: 17px 0;
@@ -516,15 +520,15 @@ li {
 
 /* --------------------- #content BOXES --------------------- */
 #content .box1 {
-	background-color: #eff0ea;
-	border: 1px solid #dedcd7;
+	background-color: #f7f7f9;
+	border: 0;
 	padding: 12px;
 	overflow: hidden;
 	margin-top: -10px;
 }
 #content .box1 .itemImage {
 	position: relative;
-	border: 1px solid #dedcd7;
+	border: 0;
 	float: left;
 	width: 400px;
 	height: 397px;
@@ -550,8 +554,8 @@ li {
 	background: url(../images/global/icon-magnify-white.png) no-repeat right top;
 }
 #content .box2 {
-	background-color: #eff0ea;
-	border: 1px solid #dedcd7;
+	background-color: #f7f7f9;
+	border: 0;
 	padding: 25px 14px 24px 24px;
 	overflow: hidden;
 	margin-top: 10px;
@@ -628,7 +632,7 @@ li {
 	margin-bottom: 13px;
 }
 #singleColumn .box3 {
-	background-color: #eff0ea;
+	background-color: #f7f7f9;
 	padding: 22px;
 	float: left;
 	height: 421px;
@@ -679,7 +683,7 @@ li {
 	font-size: 12px;
 	padding: 11px 0;
 	margin-bottom: 15px;
-	background-color: #eff0ea;
+	background-color: #f7f7f9;
 	border-top: 1px solid #e4e2e0;
 	border-bottom: 1px solid #e4e2e0;
 	overflow: hidden;
@@ -875,10 +879,8 @@ ul.tabNavigation li a, ul.tabNavigation2 li a {
 	padding: 0 20px;
 	color: #fff;
 	text-decoration: none;
-	border-top: 1px solid #bbb8b2;
-	border-right: 1px solid #bbb8b2;
-	border-left: 1px solid #bbb8b2;
-	background-color: #bbb8b2;
+	border: 0;
+	background-color: #a3bcc4;
 }
 ul.tabNavigation li a:hover, ul.tabNavigation2 li a:hover {
 	color: #312720;
@@ -897,7 +899,7 @@ ul.tabNavigation li a.selected {
 	background-color: #fff;
 }
 ul.tabNavigation2 li a.selected {
-	background-color: #eff0ea;
+	background-color: #f7f7f9;
 }
 ul.tabNavigation li a:hover {
 }
@@ -906,27 +908,27 @@ ul.tabNavigation li a:focus, ul.tabNavigation2 li a:focus {
 }
 div.tabs > div {
 	padding: 20px;
-	border: 1px solid #dedcd7;
+	border: 1px solid #cae3eb;
 	height: 329px; /*-- Add margin-top value from below to compensate --*/
 	background-color: #fff;
 	margin-top: -2px; /*-- Pull the divs up over tabs --*/
 }
 div.tabs2 > div {
 	padding: 12px 12px 4px 12px;
-	border: 1px solid #dedcd7;
-	background-color: #eff0ea;
+	border: 0;
+	background-color: #f7f7f9;
 	margin-top: -2px; /*-- Pull the divs up over tabs --*/
 }
 div.tabs > div h2, div.tabs2 > div h2 {
 	margin-top: 0;
 }
 div.tabs2 #first2 a img, div.tabs2 #second2 a img {
-	border: 1px solid #dedcd7;
+	border: 1px solid #cae3eb;
 	margin-right: 6px;
 	margin-bottom: 4px;
 }
 div.tabs2 #first2 a:hover img, div.tabs2 #second2 a:hover img {
-	border: 1px solid #bbb8b2;
+	border: 1px solid #a3bcc4;
 }
 #first {
 }
@@ -967,7 +969,7 @@ select option {
 }
 #form1 #submit, #formFind #searchLoc, .linkBlock  {
 	background-image: none;
-	background-color: #312720;
+	background-color: #666;
 	border: 0;
 	color: #fff;
 	text-transform: uppercase;
@@ -976,7 +978,7 @@ select option {
 	text-decoration: none;
 }
 #form1 #submit:hover, #formFind #searchLoc:hover, .linkBlock:hover  {
-	background-color: #66564a;
+	background-color: #333;
 }
 .linkBlock {
 	padding: 4px 14px;
@@ -1027,8 +1029,8 @@ select option {
 	color: #675e55;
 }
 #formFind input[type=text] {
-	border: 1px solid #e4e2e0;
-	background-color: #eff0ea;
+	border: 0;
+	background-color: #f7f7f9;
 	padding: 2px 0 2px 6px;
 	font: 12px/20px Helvetica, Arial,sans-serif;
 	color: #675e55;
@@ -1066,9 +1068,9 @@ select option {
 	margin-right: 5px;
 }
 #formFilter {
-	background-color: #bbb8b2;
+	background-color: #e3e9eb;
 	padding: 15px;
-	border: 1px solid #e4e2e0;
+	border: 0;
 	margin-top: 12px;
 	position: relative;
 }
@@ -1155,7 +1157,7 @@ select option {
 	margin-top: 10px;
 	margin-right: 10px;
 	padding: 20px 24px 15px 17px;
-	background-color: #eff0ea;
+	background-color: #f7f7f9;
 	border: 1px solid #e4e2e0;
 	min-height: 102px;
 }
