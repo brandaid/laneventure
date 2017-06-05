@@ -876,24 +876,19 @@ ul.tabNavigation li, ul.tabNavigation2 li {
 }
 ul.tabNavigation li a, ul.tabNavigation2 li a {
 	display: block;
-	padding: 0 20px;
+	padding: 1px 20px 0 20px;
 	color: #fff;
 	text-decoration: none;
 	border: 0;
 	background-color: #a3bcc4;
 }
 ul.tabNavigation li a:hover, ul.tabNavigation2 li a:hover {
-	color: #312720;
-	border-top: 1px solid #dedcd7;
-	border-right: 1px solid #dedcd7;
-	border-left: 1px solid #dedcd7;
-	background-color: #fff;
+	color: #FFF;
+	background-color: #7a8e95;
 }
 ul.tabNavigation li a.selected, ul.tabNavigation2 li a.selected {
-	color: #312720;
-	border-top: 1px solid #dedcd7;
-	border-right: 1px solid #dedcd7;
-	border-left: 1px solid #dedcd7;
+	color: #FFF;
+	background: #333;
 }
 ul.tabNavigation li a.selected {
 	background-color: #fff;
