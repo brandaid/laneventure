@@ -253,6 +253,13 @@ h1, h2, h3, h4, h5, h6, p, span, a, ul, li {
     max-width: 260px;
 }
 
+/*TABS*/
+
+ul.tabNavigation li a.selected,
+ul.tabNavigation2 li a.selected {
+    background-color: #333;
+}
+
 /*FOOTER*/
 
 .form-footer {
